@@ -1,0 +1,108 @@
+{{#footerall}}
+
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4" style="background:#fff;border-top: 3px #c02424 solid;padding-top: 10vh;margin-top: 10vh;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left pb-5">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-5 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact us</h5>
+
+        <div class="row">
+          <div class="col-md-2 mx-auto">
+            Email
+          </div>
+          <div class="col-md-1 mx-auto">
+            :
+          </div>
+          <div class="col-md-9 mx-auto">
+            {{emailid}}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 mx-auto">
+            Phone
+          </div>
+          <div class="col-md-1 mx-auto">
+            :
+          </div>
+          <div class="col-md-9 mx-auto">
+            {{ phoneno}}
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-2 mx-auto">
+            Address
+          </div>
+          <div class="col-md-1 mx-auto">
+            :
+          </div>
+          <div class="col-md-9 mx-auto">
+            {{address}}
+          </div>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+       <div class="col-md-2 mx-auto">
+       </div>
+      <!-- Grid column -->
+      <div class="col-md-5 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social Media</h5>
+        <ul class="social-network social-circle">
+            <li><a href="{{gpurl}}" class="icoLinkedin" title="Linkedin"><i class="fa fa-home"></i></a></li>
+             <li><a href="{{fburl}}" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             
+            </ul>	
+        
+
+      </div>
+      
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background:#c02424;color:#fff">{{{copyright_footer}}}</div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+{{/footerall}}
+
+<!--E.O.Footer-->
+
+{{{ output.standard_footer_html }}}
+{{{output.standard_end_of_body_html}}}
+
+{{#js}}
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+{{/js}}
